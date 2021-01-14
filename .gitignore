@@ -5,13 +5,28 @@ web/app/mu-plugins/*/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
+web/app/themes/*
+!web/app/themes/.gitkeep
 
 # WordPress
 web/wp
 web/.htaccess
 
+# WordPress Languages
+web/app/languages/*
+!web/app/languages/plugins
+!web/app/languages/.gitkeep
+
 # Logs
 *.log
+
+# node
+node_modules
+
+#theme/wp-devs
+web/app/languages
+web/app/themes
+
 
 # Dotenv
 .env
@@ -19,7 +34,15 @@ web/.htaccess
 !.env.example
 
 # Composer
+/bin/*
 /vendor
+!vendor/.gitkeep
+build/vendor/*
+.idea
+logs/*
 
 # WP-CLI
-wp-cli.local.yml
+wp-cli.local.
+
+##your custome theme folder, if you use tools for building css and js
+### e.g. themes/twentyfourteen-childtheme/resources/node_modules/
